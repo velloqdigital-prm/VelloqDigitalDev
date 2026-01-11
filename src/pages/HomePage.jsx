@@ -21,7 +21,7 @@ function Home() {
   };
 
   const stats = [
-    { value: '500+', label: 'Clients Served' },
+    { value: '100+', label: 'Clients Served' },
     { value: '95%', label: 'Client Retention' },
     { value: '200%', label: 'Avg. ROI Increase' },
     { value: '50+', label: 'Industry Awards' },

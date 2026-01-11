@@ -118,7 +118,7 @@ function AboutPage() {
             </div>
           </div>
         </section>
-
+      {/*
         <section className='team-section'>
           <div className='team-header'>
             <h2>Meet Our Team</h2>
@@ -137,7 +137,6 @@ function AboutPage() {
               <p>With over 15 years in digital marketing, Alex leads our vision to make every brand legendary.</p>
             </div>
 
-            {/* CARD 2 */}
             <div className='team-card red'>
               <div className='team-icon red-bg'>
                 <FiUsers />
@@ -148,8 +147,7 @@ function AboutPage() {
 
               <p>Jessica brings data-driven insights and creative solutions to every campaign.</p>
             </div>
-
-            {/* CARD 3 */}
+            
             <div className='team-card purple'>
               <div className='team-icon purple-bg'>
                 <FiUsers />
@@ -162,13 +160,14 @@ function AboutPage() {
             </div>
           </div>
         </section>
+      */}
 
         <section className='impact-section'>
           <h2>Our Impact</h2>
 
           <div className='impact-grid'>
             <div className='impact-item'>
-              <span className='number blue'>500+</span>
+              <span className='number blue'>100+</span>
               <p>Clients Served</p>
             </div>
 

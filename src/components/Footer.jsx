@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './Footer.css';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import logo2 from '../assets/LogoWithoutBackground.png';
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -14,7 +15,9 @@ export default function Footer() {
       <div className='footer-top'>
         {/* About */}
         <div className='footer-col'>
-          <div className='logo-box'></div>
+          <div className='logo-box'>
+            <img src={logo2} alt='logo-box' />
+          </div>
 
           <p>
             We are a full-service digital marketing agency dedicated to <br />
@@ -22,16 +25,16 @@ export default function Footer() {
           </p>
 
           <div className='socials'>
-            <a href='https://facebook.com' target='_blank' rel='noreferrer'>
+            <a href='https://www.facebook.com/share/1ZyjLcyAWN/' target='_blank' rel='noreferrer'>
               <Facebook size={18} />
             </a>
             <a href='https://twitter.com' target='_blank' rel='noreferrer'>
               <Twitter size={18} />
             </a>
-            <a href='https://instagram.com' target='_blank' rel='noreferrer'>
+            <a href='https://www.instagram.com/velloqdigital/?igsh=MTZyMGRmenE4aHc4YQ%3D%3D&utm_source=qr#' target='_blank' rel='noreferrer'>
               <Instagram size={18} />
             </a>
-            <a href='https://linkedin.com' target='_blank' rel='noreferrer'>
+            <a href='https://in.linkedin.com/' target='_blank' rel='noreferrer'>
               <Linkedin size={18} />
             </a>
           </div>
@@ -62,18 +65,18 @@ export default function Footer() {
 
           <p>
             <Mail size={16} />
-            <a href='mailto:info@velloqdigital.com'>info@velloqdigital.com</a>
+            <a href='mailto:velloqdigital@gmail.com'>velloqdigital@gmail.com</a>
           </p>
 
           <p>
             <Phone size={16} />
-            <a href='tel:+15551234567'>+1 (555) 123-4567</a>
+            <a href='tel:+918208965538'>+91 8208965538</a>
           </p>
 
           <p>
             <MapPin size={16} />
             <a href='https://maps.google.com' target='_blank' rel='noreferrer'>
-              123 Marketing Street, Digital City, DC 12345
+              Rahatani, Pune, IN 411017
             </a>
           </p>
         </div>

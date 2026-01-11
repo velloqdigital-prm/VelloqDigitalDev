@@ -31,7 +31,7 @@ function ContactPage() {
               </div>
               <div>
                 <h4>Email</h4>
-                <p>info@vellogdigital.com</p>
+                <p>vellogdigital@gmail.com</p>
               </div>
             </div>
 
@@ -41,7 +41,7 @@ function ContactPage() {
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 8208965538</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ function ContactPage() {
               </div>
               <div>
                 <h4>Office</h4>
-                <p>123 Marketing Street, Digital City, DC 12345</p>
+                <p>Rahatani, Pune, IN 411 017</p>
               </div>
             </div>
 

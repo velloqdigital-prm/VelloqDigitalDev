@@ -1,119 +1,106 @@
 import './ContactPage.css';
-import contactbg from '../assets/banner 3.webp';
+import { AiOutlineMail } from 'react-icons/ai';
+import { LuPhone } from 'react-icons/lu';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 function ContactPage() {
+  const openMap = () => {
+    window.open('https://www.google.com/maps?q=18.5204,73.8567', '_blank');
+  };
   return (
     <div>
       <section className='hero-section'>
-        <div className='hero-overlay'></div>
-        <img src={contactbg} alt='Hero Background' className='hero-bg' />
+        <div className='hero-content'>
+          <h1 className='hero-title'>Get in Touch</h1>
 
-        <div className='hero-content text-center'>
-          <h1 className='fade-in-up'>Get in Touch With Us</h1>
-          <h6 className='fade-in-up delay-1 text-white'>
-            We’d love to hear from you! Whether you have questions, ideas, or would like to contribute to our Children’s
-            Day celebration — your voice matters. Reach out to us and join our mission to educate, empower, and
-            celebrate every child.
-          </h6>
-          <br />
-          <br />
+          <p className='hero-subtitle'>Ready to make your brand legendary? Let's start a conversation.</p>
         </div>
       </section>
+      <div className='contact-container row  mx-auto my-5'>
+        <section className='contact-section col-md-6'>
+          <div className='contact-info'>
+            <h2>Let's Talk</h2>
+            <p>
+              Have a project in mind? We'd love to hear about it. Fill out the form or reach out directly using the
+              contact information below.
+            </p>
 
-      <section className='contact-section'>
-        <div className='contact-overlay'></div>
-        <div className='contact-container'>
-          <h1>We’re Here to Listen!</h1>
-          <h5>
-            Have a question or want to participate in our 2025 Children’s Day events? <br />
-            Fill out the form below and our team will get back to you soon!
-          </h5>
-
-          <form className='contact-form'>
-            <div className='input-group'>
-              <label htmlFor='name'>First Name *</label>
-              <input type='text' id='name' name='name' required />
+            <div className='info-box email'>
+              <div className='icon email-icon'>
+                <AiOutlineMail />
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@vellogdigital.com</p>
+              </div>
             </div>
 
-            <div className='input-group'>
-              <label htmlFor='email'>Email Address *</label>
-              <input type='email' id='email' name='email' required />
+            <div className='info-box phone'>
+              <div className='icon phone-icon'>
+                <LuPhone />
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
             </div>
 
-            <div className='input-group'>
-              <label htmlFor='phone'>Phone Number *</label>
-              <input type='tel' id='phone' name='phone' required />
+            <div className='info-box office'>
+              <div className='icon office-icon'>
+                <HiOutlineLocationMarker />
+              </div>
+              <div>
+                <h4>Office</h4>
+                <p>123 Marketing Street, Digital City, DC 12345</p>
+              </div>
             </div>
 
-            <div className='input-group'>
-              <label htmlFor='message'>Message</label>
-              <textarea id='message' name='message' maxLength='180'></textarea>
+            <div className='business-hours'>
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Sunday: Closed</p>
             </div>
+          </div>
+        </section>
 
-            <div className='consent'>
-              <input type='checkbox' id='consent' required />
-              <label htmlFor='consent'>
-                I agree and consent to receive all communications, including notifications, promotional messages, and
-                calls at the provided number.
-              </label>
-            </div>
+        <section className='map-contact col-md-6 '>
+          <div className='contact-form'>
+            <h3>Send us a Message</h3>
 
-            <button type='submit' className='submit-btn'>
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
+            <form>
+              <label>Full Name *</label>
+              <input type='text' placeholder='John Doe' />
 
-      <section className='map-contact'>
-        <div className='map'>
-          <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3039780285054!2d72.50934387464376!3d23.011691916413897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f46ab4d2c9%3A0x58f9da8e34a3e928!2sSneh%20Desai%20%7C%20Life%20Coach%20And%20Business%20Coach!5e0!3m2!1sen!2sin!4v1698300792819!5m2!1sen!2sin'
-            width='90%'
-            height='450'
-            style={{ border: 0 }}
-            allowFullScreen=''
-            loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-            title='Google Map'
-          ></iframe>
-        </div>
+              <label>Email Address *</label>
+              <input type='email' placeholder='john@example.com' />
 
-        <div className='contact-details'>
-          <h2>Let’s Connect and Create Smiles Together</h2>
-          <p>
-            We’re always open to collaborations, suggestions, and support for children’s welfare.
-            <br /> If you’d like to host an event, volunteer, or share your creative ideas for Children’s Day — feel
-            free to contact us through the details below:
-          </p>
-          <p>
-            <strong>📍 Address:</strong>
-            <br />
-            <a
-              href='https://www.google.com/maps?q=601,+Suryansh+Gateway,+beside+Iscon+Gathiya,+Bhadaj,+Ahmedabad,+Gujarat+380060'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='contact-link'
-            >
-              601, Suryansh Gateway, beside Iscon Gathiya, circle, Bhadaj, Ahmedabad, Gujarat 380060
-            </a>
-          </p>
+              <label>Phone Number</label>
+              <input type='text' placeholder='+1 (555) 123-4567' />
 
-          <p>
-            <strong>📞 Phone:</strong>
-            <br />
-            <a href='tel:+919904004444' className='contact-link'>
-              +91 99876 54321
-            </a>
-          </p>
+              <label>Company Name</label>
+              <input type='text' placeholder='Your Company' />
 
-          <p>
-            <strong>📧 Email:</strong>
-            <br />
-            <a href='mailto:support@snehworld.com' className='contact-link'>
-              support@snehworld.com
-            </a>
-          </p>
+              <label>Message *</label>
+              <textarea placeholder='Tell us about your project...'></textarea>
+
+              <button type='submit'>Send Message ➤</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <section className='visit-office-wrapper'>
+        <div className='visit-office-card'>
+          <h2>Visit Our Office</h2>
+          <p>We're located in the heart of Digital City</p>
+
+          <div className='map-box' onClick={openMap}>
+            <span className='map-icon'>
+              <HiOutlineLocationMarker />
+            </span>
+            <p className='map-text'>Click to open Google Map</p>
+          </div>
         </div>
       </section>
     </div>

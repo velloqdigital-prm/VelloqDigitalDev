@@ -5,8 +5,7 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import ThemePage from './pages/ThemePage';
-import GalleryPage from './pages/GalleryPage';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
   return (
@@ -15,8 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/gallery' element={<GalleryPage />} />
-        <Route path='/theme' element={<ThemePage />} />
+        <Route path='/services' element={<ServicesPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <Footer />

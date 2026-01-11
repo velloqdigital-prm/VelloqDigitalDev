@@ -1,59 +1,114 @@
-.footer-page {
-  background-color: #130149;
-  padding: 7px 0;
-  text-align: center;
+.footer {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #cbd5f5;
+  font-size: 14px;
 }
-.footer-page img {
+
+/* ---------------- TOP SECTION ---------------- */
+.footer-top {
+  margin: auto;
+  padding: 5% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Columns */
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.footer-col p {
+  color: #94a3b8;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* Logo */
+.logo-box {
+  width: 40px;
   height: 40px;
+  background: #fff;
+  margin-bottom: 14px;
 }
-.text-contact {
-  text-align: left;
-}
+
+/* Links */
 .footer a {
+  color: #94a3b8;
+  font-size: 17px;
   text-decoration: none;
-  color: white;
-  transition: 0.3s;
+  word-break: break-word;
 }
 
 .footer a:hover {
-  color: #00aaff;
+  color: #fff;
 }
 
-.footer a.active {
-  color: #130149;
-  background-color: white;
-  padding: 10px 30px;
-  border-radius: 2px;
-}
-.footer a {
-  font-size: 22px;
-  font-weight: 650;
-  padding: 10px 30px;
+/* Social icons */
+.socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 767px) {
-  .footer a,
-  h4,
-  .navlinks {
-    font-size: 16px;
+.socials a {
+  display: inline-flex;
+}
+
+/* Lists */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+/* ---------------- BOTTOM BAR ---------------- */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
   }
-  .footer-page {
-    flex-direction: column;
-    gap: 30px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: left;
   }
 
-  .text-contact {
-    text-align: center;
+  .footer-col {
+    margin-bottom: 30px;
   }
-  .footer a {
-    font-size: 20px;
-    font-weight: 650;
-    padding: 10px 10px;
+
+  .footer-col p {
+    align-items: flex-start;
   }
-  .footer a.active {
-    color: #130149;
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 2px;
+
+  .socials {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }

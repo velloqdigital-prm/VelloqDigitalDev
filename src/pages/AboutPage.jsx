@@ -1,123 +1,200 @@
 import './AboutPage.css';
-import heroimg from '../assets/chimg2.jpg';
-import heartimg from '../assets/childheart.jpg';
-import meaningchild from '../assets/meaningchild.jpg';
-import betterimg from '../assets/betterimg.jpg';
-import successimg from '../assets/successimg.jpg';
+import { FaChartLine } from 'react-icons/fa';
+import { LuUsers } from 'react-icons/lu';
+import { BiBullseye } from 'react-icons/bi';
+import { FiAward } from 'react-icons/fi';
+import { FiUsers } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 function AboutPage() {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate('/contact');
+    window.scrollTo(0, 0);
+  };
   return (
     <div className='about-back '>
       <div>
         <section className='hero-section'>
-          <div className='hero-overlay'></div>
-          <img src={heroimg} alt='Hero Background' className='hero-bg' />
-
-          <div className='hero-content text-center'>
-            <h1 className='fade-in-up'>Why We Celebrate Children’s Day ?</h1>
-            <h6 className='fade-in-up delay-1 text-white'>
-              India celebrates this special day to honor Pandit Jawaharlal Nehru, our first Prime Minister, who believed
-              that children are the real strength and foundation of a nation. Fondly called{' '}
-              <strong>“Chacha Nehru”</strong>, he loved children deeply and always encouraged education, equality, and
-              happiness for every child.
-            </h6>
-            <br />
-            <br />
+          <div className='hero-content'>
+            <h1 className='hero-title'>About Velloq Digital</h1>
+            <p className='hero-subtitle'>
+              We are a full-service digital marketing agency dedicated to helping brands grow their online presence and
+              achieve legendary results.
+            </p>
           </div>
         </section>
 
-        <section className='about-intro my-md-5'>
-          <div className='d-md-flex align-items-center justify-content-center gap-5 mt-md-0 mt-5'>
-            <div className='intro-text col-md-5'>
-              <h2>The Heart Behind Children’s Day</h2>
+        <section className='mission-section'>
+          <div className='mission-container'>
+            <div className='mission-left col-md-6'>
+              <h2>Our Mission</h2>
 
-              <h5>
-                <i>Pandit Jawaharlal Nehru’s Love for Children</i>
-              </h5>
+              <p className='intro'>
+                To transform businesses through innovative digital marketing strategies that deliver measurable results
+                and create lasting impact.
+              </p>
+
               <p>
-                Pandit Nehru, lovingly called “Chacha Nehru”, had deep affection for children. He often said,
-                <br /> <br /> “The children of today will make the India of tomorrow.” <br />
-                <br />
-                He believed that every child deserves equal opportunity to grow, learn, and dream freely. Children’s Day
-                celebrates his vision of a joyful, safe, and educated childhood for every boy and girl. <br />
+                Founded in 2020, we've been helping businesses navigate the digital landscape with innovative strategies
+                and measurable results. Our team of experts brings together creativity, data analytics, and industry
+                expertise to deliver campaigns that truly make a difference.
               </p>
             </div>
 
-            <div className='intro-image-container col-md-5'>
-              <img className='intro-image w-100' src={heartimg} alt='About us image' />
-            </div>
-          </div>
-        </section>
+            <div className='mission-card col-md-5'>
+              <div className='mission-item'>
+                <div className='icon blue'>
+                  <LuUsers />
+                </div>
+                <div>
+                  <h4>Client-Focused</h4>
+                  <span>Your success is our priority</span>
+                </div>
+              </div>
 
-        <section className='about-intro my-md-5'>
-          <div className='d-md-flex align-items-center justify-content-center gap-5 mt-md-0 mt-5'>
-            <div className='intro-image-container col-md-5'>
-              <img className='intro-image w-100' src={meaningchild} alt='About us image' />
-            </div>
-            <div className='intro-text col-md-5'>
-              <h2>The True Meaning of Children’s Day</h2>
+              <div className='mission-item'>
+                <div className='icon red'>
+                  <BiBullseye />
+                </div>
+                <div>
+                  <h4>Result-Driven</h4>
+                  <span>We deliver measurable outcomes</span>
+                </div>
+              </div>
 
-              <h5>
-                <i>Celebrating Innocence, Learning, and Dreams</i>
-              </h5>
-              <p>
-                Children’s Day is not just a holiday; it’s a celebration of childhood itself. It reminds parents,
-                teachers, and society to value and respect children’s voices.tion: A smiling group of children studying,
-                playing, or holding Indian flags.
-                <br />
-                <br />
-                Across India, schools and organizations host fun events, games, storytelling sessions, and cultural
-                programs that spread joy and learning.
-              </p>
-            </div>
-          </div>
-        </section>
+              <div className='mission-item'>
+                <div className='icon purple'>
+                  <FiAward />
+                </div>
+                <div>
+                  <h4>Award-Winning</h4>
+                  <span>Recognized industry excellence</span>
+                </div>
+              </div>
 
-        <section className='about-intro my-md-5'>
-          <div className='d-md-flex align-items-center justify-content-center gap-5 mt-md-0 mt-5'>
-            <div className='intro-text col-md-5'>
-              <h2>Together for a Better Tomorrow</h2>
-
-              <h5>
-                <i>Our Vision and Mission</i>
-              </h5>
-              <p>
-                To build a world where every child is educated, safe, and free to dream big.
-                <br /> <br /> To empower children through quality education, emotional support, and awareness programs
-                that encourage kindness, creativity, and sustainability.
-                <br />
-              </p>
-            </div>
-
-            <div className='intro-image-container col-md-5'>
-              <img className='intro-image w-100' src={betterimg} alt='About us image' />
+              <div className='mission-item'>
+                <div className='icon pink'>
+                  <FaChartLine />
+                </div>
+                <div>
+                  <h4>Growth-Oriented</h4>
+                  <span>Strategies that scale</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className='about-intro py-md-5'>
-          <div className='d-md-flex align-items-center justify-content-center gap-5 mt-md-0 mt-5'>
-            <div className='intro-image-container col-md-5'>
-              <img className='intro-image w-100' src={successimg} alt='About us image' />
-            </div>
-            <div className='intro-text col-md-5'>
-              <h2>Spreading Smiles and Success</h2>
+        <section className='values-section'>
+          <div className='values-header'>
+            <h2>Our Core Values</h2>
+            <p>The principles that guide everything we do</p>
+          </div>
 
-              <h5>
-                <i>Celebrating the Spirit of Childhood</i>
-              </h5>
+          <div className='values-grid'>
+            <div className='value-card'>
+              <h4>Innovation</h4>
               <p>
-                Across India, Children’s Day is celebrated in schools, NGOs, and communities with dance, music, drama,
-                art, and storytelling. Teachers dress up as kids, students take the stage, and laughter fills the air.
-                <br />
-                <br />
-                It’s a day to remind ourselves that children are not just the future — they are the joy of today.
-                <br />
-                <br />
-                “Every child is a different kind of flower, and all together, they make this world a beautiful garden.”
+                We stay ahead of digital trends and continuously explore new strategies to keep our clients at the
+                forefront of their industries.
+              </p>
+            </div>
+
+            <div className='value-card'>
+              <h4>Transparency</h4>
+              <p>
+                Clear communication and honest reporting are the foundations of our client relationships. You always
+                know where you stand.
+              </p>
+            </div>
+
+            <div className='value-card'>
+              <h4>Excellence</h4>
+              <p>
+                We set high standards and never compromise on quality. Every campaign is crafted with meticulous
+                attention to detail.
               </p>
             </div>
           </div>
+        </section>
+
+        <section className='team-section'>
+          <div className='team-header'>
+            <h2>Meet Our Team</h2>
+            <p>The talented people behind our success</p>
+          </div>
+
+          <div className='team-grid'>
+            <div className='team-card blue'>
+              <div className='team-icon blue-bg'>
+                <FiUsers />
+              </div>
+
+              <h4>Alex Thompson</h4>
+              <span>Founder & CEO</span>
+
+              <p>With over 15 years in digital marketing, Alex leads our vision to make every brand legendary.</p>
+            </div>
+
+            {/* CARD 2 */}
+            <div className='team-card red'>
+              <div className='team-icon red-bg'>
+                <FiUsers />
+              </div>
+
+              <h4>Jessica Martinez</h4>
+              <span>Head of Strategy</span>
+
+              <p>Jessica brings data-driven insights and creative solutions to every campaign.</p>
+            </div>
+
+            {/* CARD 3 */}
+            <div className='team-card purple'>
+              <div className='team-icon purple-bg'>
+                <FiUsers />
+              </div>
+
+              <h4>David Kim</h4>
+              <span>Creative Director</span>
+
+              <p>David crafts compelling visual stories that resonate with audiences across all platforms.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className='impact-section'>
+          <h2>Our Impact</h2>
+
+          <div className='impact-grid'>
+            <div className='impact-item'>
+              <span className='number blue'>500+</span>
+              <p>Clients Served</p>
+            </div>
+
+            <div className='impact-item'>
+              <span className='number red'>95%</span>
+              <p>Client Retention</p>
+            </div>
+
+            <div className='impact-item'>
+              <span className='number purple'>200%</span>
+              <p>Avg. ROI Increase</p>
+            </div>
+
+            <div className='impact-item'>
+              <span className='number pink'>50+</span>
+              <p>Industry Awards</p>
+            </div>
+          </div>
+        </section>
+
+        <section className='cta-section'>
+          <h1>Join Us on the Journey</h1>
+          <p> Let's work together to make your brand legendary</p>
+          <button className='cta-btn' onClick={handleNavigate}>
+            Get in Touch <span>→</span>
+          </button>
         </section>
       </div>
     </div>

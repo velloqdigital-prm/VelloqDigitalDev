@@ -3,6 +3,116 @@
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b78a6, #6a6a9f);
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+  color: #fff;
+
+  opacity: 0;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  opacity: 0;
+  animation: fadeUp 1.6s ease forwards;
+}
+
+/* Heading */
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: white;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-title span {
+  font-style: italic;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 100%;
+  margin: 0 auto 40px;
+  opacity: 0.95;
+  animation: fadeUp 1.4s ease forwards;
+}
+.hero-title,
+.hero-subtitle,
+.hero-buttons {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero-title {
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-subtitle {
+  animation: fadeUp 1.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-buttons {
+  animation: fadeUp 1.6s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Primary Button */
+.btn.primary {
+  background: #e63946;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #d62839;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.btn.secondary {
+  background: #fff;
+  color: #2f3a55;
+}
+
+.btn.secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Animations */
 
 .hero-section {
   position: relative;
@@ -30,18 +140,6 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(15, 23, 42, 1));
 }
 
-.hero-content {
-  z-index: 2;
-  max-width: 700px;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #facc15, #fb923c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .nehru-abt {
   background-color: #eee1fa;
 }
@@ -166,5 +264,23 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    justify-content: center;
   }
 }

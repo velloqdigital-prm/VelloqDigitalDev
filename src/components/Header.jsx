@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/VelloqDigital.png';
+import logo from '../assets/LogoWithoutBackground.png';
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);

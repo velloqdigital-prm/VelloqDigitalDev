@@ -65,12 +65,12 @@ export default function Footer() {
 
           <p>
             <Mail size={16} />
-            <a href='mailto:velloqdigital@gmail.com'>velloqdigital@gmail.com</a>
+            <a href='mailto:velloqdigital@gmail.com'>info@velloqdigital.com</a>
           </p>
 
           <p>
             <Phone size={16} />
-            <a href='tel:+918208965538'>+91 8208965538</a>
+            <a href='tel:+919130080955'>+91 91300 80955</a>
           </p>
 
           <p>

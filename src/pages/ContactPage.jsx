@@ -31,7 +31,7 @@ function ContactPage() {
               </div>
               <div>
                 <h4>Email</h4>
-                <p>vellogdigital@gmail.com</p>
+                <p>info@velloqdigital.com</p>
               </div>
             </div>
 
@@ -41,7 +41,7 @@ function ContactPage() {
               </div>
               <div>
                 <h4>Phone</h4>
-                <p>+91 8208965538</p>
+                <p>+91 91300 80955</p>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ function ContactPage() {
           </div>
         </section>
       </div>
-
+      {/* 
       <section className='visit-office-wrapper'>
         <div className='visit-office-card'>
           <h2>Visit Our Office</h2>
@@ -103,6 +103,7 @@ function ContactPage() {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 }
